@@ -3,6 +3,11 @@ import { useState } from 'react'
 
 const Form = () => {
   const [newItemName, setNewItemName] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(newItemName);
+  };
   return (
     <form>
       <h4>grocery bud</h4>
@@ -34,3 +39,4 @@ export default Form
 // S7-233: pass in newItemName as value @input
 // S7-233: add onChange event to input
 // S7-233: add button with type submit and CN btn
+// S7-233: create handleSubmit function
