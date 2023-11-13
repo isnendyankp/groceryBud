@@ -9,7 +9,7 @@ const Form = () => {
     console.log(newItemName);
   };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h4>grocery bud</h4>
       <div className="form-control">
         <input
@@ -40,3 +40,4 @@ export default Form
 // S7-233: add onChange event to input
 // S7-233: add button with type submit and CN btn
 // S7-233: create handleSubmit function
+// S7-233: add onSubmit event to form
