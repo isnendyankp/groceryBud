@@ -13,6 +13,9 @@ const Form = () => {
           value={newItemName}
           onChange={(event) => setNewItemName(event.target.value)}
         />
+        <button type="submit" className="btn">
+          add item
+        </button>
       </div>
     </form>
   );
@@ -30,3 +33,4 @@ export default Form
 // S7-233: add input with type text and CN form-input
 // S7-233: pass in newItemName as value @input
 // S7-233: add onChange event to input
+// S7-233: add button with type submit and CN btn
