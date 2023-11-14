@@ -7,7 +7,7 @@ const Form = ({addItem}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!newItemName) return;
-    
+    addItem(newItemName);
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -44,3 +44,4 @@ export default Form
 // S7-233: add onSubmit event to form
 // S7-233: add addItem prop to Form component
 // S7-233: add if statement to handleSubmit
+// S7-233: add newItemName to addItem @handleSubmit
