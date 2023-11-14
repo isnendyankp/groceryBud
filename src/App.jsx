@@ -5,7 +5,9 @@ const App = () => {
   const [name, setName] = useState([]);
 
   const addItem = (itemName) => {
-    
+    const newItem = {
+
+    };
   }
   return <section className="section-center">
     <Form />
@@ -20,3 +22,4 @@ export default App;
 // S7-233: Pass Form component into App component
 // S7-233: import Form component
 // S7-233: create base addItem function
+// S7-233: create newItem object
