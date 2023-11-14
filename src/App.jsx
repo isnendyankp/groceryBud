@@ -14,7 +14,7 @@ const App = () => {
     setName([...items, newItem]);
   }
   return <section className="section-center">
-    <Form />
+    <Form addItem={addItem}/>
     </section>;
 };
 
@@ -29,3 +29,4 @@ export default App;
 // S7-233: create newItem object
 // S7-233: add propertys to newItem object
 // S7-233: add newItem to items array
+// S7-233: pass addItem function into Form component
