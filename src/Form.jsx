@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-const Form = () => {
+const Form = ({addItem}) => {
   const [newItemName, setNewItemName] = useState('');
 
   const handleSubmit = (event) => {
@@ -41,3 +41,4 @@ export default Form
 // S7-233: add button with type submit and CN btn
 // S7-233: create handleSubmit function
 // S7-233: add onSubmit event to form
+// S7-233: add addItem prop to Form component
