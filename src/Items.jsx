@@ -3,7 +3,7 @@ import SingleItem from './SingleItem'
 
 const Items = ({items, removeItem}) => {
   return (
-    <div>Items</div>
+    <div className='items'>Items</div>
   )
 }
 
@@ -13,3 +13,4 @@ export default Items
 // S7-235: create Items component
 // S7-235: add items prop & removeItem prop
 // S7-235: import SingleItem component
+// S7-235: Add className items to div
