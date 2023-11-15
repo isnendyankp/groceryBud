@@ -13,6 +13,11 @@ const App = () => {
     };
     setItems([...items, newItem]);
   }
+
+  const removeItem = (itemId) => {
+
+  };
+
   return <section className="section-center">
     <Form addItem={addItem}/>
     </section>;
@@ -31,3 +36,4 @@ export default App;
 // S7-233: add newItem to items array
 // S7-233: pass addItem function into Form component
 // S7-233: change setName to setItems
+// S7-233: create removeItem function base
