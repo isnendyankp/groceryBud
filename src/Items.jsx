@@ -5,7 +5,7 @@ const Items = ({items, removeItem}) => {
   return (
     <div className='items'>
         {items.map((item) => {
-            return <SingleItem />
+            return <SingleItem key={item.id}/>
         })}
     </div>
   )
@@ -20,3 +20,4 @@ export default Items
 // S7-235: Add className items to div
 // S7-235: map over items array
 // S7-235: Add return SingleItem component @map method
+// S7-235: Add key prop to return SingleItem component
