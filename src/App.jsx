@@ -3,7 +3,7 @@ import Form from "./Form";
 import { nanoid } from "nanoid";
 
 const App = () => {
-  const [items, setName] = useState([]);
+  const [items, setItems] = useState([]);
 
   const addItem = (itemName) => {
     const newItem = {
@@ -11,7 +11,7 @@ const App = () => {
       completed: false,
       id: nanoid(),
     };
-    setName([...items, newItem]);
+    setItems([...items, newItem]);
   }
   return <section className="section-center">
     <Form addItem={addItem}/>
@@ -30,3 +30,4 @@ export default App;
 // S7-233: add propertys to newItem object
 // S7-233: add newItem to items array
 // S7-233: pass addItem function into Form component
+// S7-233: change setName to setItems
