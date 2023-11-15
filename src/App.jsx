@@ -2,6 +2,7 @@ import { useState } from "react";
 import Form from "./Form";
 import { nanoid } from "nanoid";
 
+
 const App = () => {
   const [items, setItems] = useState([]);
 
@@ -20,6 +21,7 @@ const App = () => {
 
   return <section className="section-center">
     <Form addItem={addItem}/>
+    <Items items={items} removeItem={removeItem} />
     </section>;
 };
 
@@ -37,3 +39,4 @@ export default App;
 // S7-233: pass addItem function into Form component
 // S7-233: change setName to setItems
 // S7-233: create removeItem function base
+// S7-233: pass removeItem function & items state @Items component
