@@ -3,18 +3,25 @@ import React, { useState } from 'react'
 const SingleItem = ({item, removeItem}) => {
   const [isChecked, setIsChecked] = useState(item.completed)
   return (
-    <div className='single-item'>
-      <input 
-       type="checkbox"
-       checked={isChecked}
-       onChange={() => setIsChecked(!isChecked)}
-       />
-      <p>{item.name}</p>
-      <button className='btn remove-btn' type='button'>
+    <div className="single-item">
+      <input
+        type="checkbox"
+        checked={item.completed}
+        onChange={() => editItem(item.id)}
+      />
+      <p
+        style={{
+          textTransform: 'capitalize',
+          textDecoration: item.completed && 'line-through',
+        }}
+      >
+        {item.name}
+      </p>
+      <button className="btn remove-btn" type="button">
         delete
       </button>
     </div>
-  )
+  );
 }
 
 export default SingleItem
@@ -29,3 +36,4 @@ export default SingleItem
 // S7-236: Add isCompleted state to SingleItem component
 // S7-236: Add isChecked to input checkbox
 // S7-236: Add onChange with pass setIsChecked @input
+// S7-236: Add style to p with textTransform: 'capitalize' & textDecoration: item.completed && 'line-through'
