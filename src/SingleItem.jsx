@@ -5,6 +5,9 @@ const SingleItem = ({item, removeItem}) => {
     <div className='single-item'>
       <input type="checkbox" />
       <p>{item.name}</p>
+      <button className='btn remove-btn' type='button'>
+
+      </button>
     </div>
   )
 }
@@ -17,3 +20,4 @@ export default SingleItem
 // S7-235: Add className single-item to div
 // S7-235: Add input checkbox to div
 // S7-235: Add p with  pass in item.name to div
+// S7-235: Add button with className remove-btn to div
