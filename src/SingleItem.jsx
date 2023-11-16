@@ -4,7 +4,11 @@ const SingleItem = ({item, removeItem}) => {
   const [isChecked, setIsChecked] = useState(item.completed)
   return (
     <div className='single-item'>
-      <input type="checkbox" checked={isChecked} />
+      <input 
+       type="checkbox"
+       checked={isChecked}
+       onChange={() => setIsChecked(!isChecked)}
+       />
       <p>{item.name}</p>
       <button className='btn remove-btn' type='button'>
         delete
@@ -24,3 +28,4 @@ export default SingleItem
 // S7-236: Add button with className remove-btn to div
 // S7-236: Add isCompleted state to SingleItem component
 // S7-236: Add isChecked to input checkbox
+// S7-236: Add onChange with pass setIsChecked @input
