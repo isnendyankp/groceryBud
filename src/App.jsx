@@ -17,7 +17,7 @@ const App = () => {
   }
 
   const removeItem = (itemId) => {
-
+     const newItems = items.filter((item) => item.id !== itemId);
   };
 
   return <section className="section-center">
@@ -42,3 +42,4 @@ export default App;
 // S7-233: create removeItem function base
 // S7-233: pass removeItem function & items state @Items component
 // S7-233: import Items component
+// S7-233: Add newItems to filter method in removeItem function
