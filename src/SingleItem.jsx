@@ -41,4 +41,4 @@ export default SingleItem
 // S7-236: Add isChecked to input checkbox
 // S7-236: Add onChange with pass setIsChecked @input
 // S7-236: Add style to p with textTransform: 'capitalize' & textDecoration: item.completed && 'line-through'
-// S7-236: Add onClick with pass removeItem @button
+// S7-237: Add onClick with pass removeItem @button

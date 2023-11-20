@@ -3,7 +3,9 @@ import Form from "./Form";
 import { nanoid } from "nanoid";
 import Items from "./Items";
 
+const setLocalStorage = (items) => {
 
+}
 const App = () => {
   const [items, setItems] = useState([]);
 
@@ -45,3 +47,4 @@ export default App;
 // S7-233: import Items component
 // S7-233: Add newItems to filter method in removeItem function
 // S7-233: pass newItems to setItems
+// S7-237: Create base setLocalStorage function with provide items parameter
