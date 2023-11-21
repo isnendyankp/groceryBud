@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import Items from "./Items";
 
 const getLocalStorage = () => {
-
+  let list = localStorage.getItem('list');
 }
 
 const setLocalStorage = (items) => {
@@ -61,3 +61,4 @@ export default App;
 // S7-238: pass in newItems to setItems @addItem function
 // S7-238: Add setLocalStorage & pass in newItems @addItem function
 // S7-238: Create getLocalStorage function base
+// S7-238: create list variable equal to localStorage.getItem('list') @getLocalStorage function
