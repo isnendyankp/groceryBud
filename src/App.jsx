@@ -15,7 +15,7 @@ const App = () => {
       completed: false,
       id: nanoid(),
     };
-    setItems([...items, newItem]);
+    const newItems = [...items, newItem];
   }
 
   const removeItem = (itemId) => {
@@ -51,3 +51,4 @@ export default App;
 // S7-237: Create base setLocalStorage function with provide items parameter
 // S7-237: Add localStorage.setItem with list & JSON.stringify(items)
 // S7-237: Add setLocalStorage & pass in newItems @removeItem function
+// S7-237: Add newItems equal to spread operator of items & newItem @addItem function 
