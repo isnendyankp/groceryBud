@@ -3,6 +3,10 @@ import Form from "./Form";
 import { nanoid } from "nanoid";
 import Items from "./Items";
 
+const getLocalStorage = () => {
+
+}
+
 const setLocalStorage = (items) => {
  localStorage.setItem('list', JSON.stringify(items));
 };
@@ -53,6 +57,7 @@ export default App;
 // S7-237: Create base setLocalStorage function with provide items parameter
 // S7-237: Add localStorage.setItem with list & JSON.stringify(items)
 // S7-237: Add setLocalStorage & pass in newItems @removeItem function
-// S7-237: Add newItems equal to spread operator of items & newItem @addItem function
-// S7-237: pass in newItems to setItems @addItem function
-// S7-237: Add setLocalStorage & pass in newItems @addItem function 
+// S7-238: Add newItems equal to spread operator of items & newItem @addItem function
+// S7-238: pass in newItems to setItems @addItem function
+// S7-238: Add setLocalStorage & pass in newItems @addItem function
+// S7-238: Create getLocalStorage function base
