@@ -17,6 +17,7 @@ const App = () => {
     };
     const newItems = [...items, newItem];
     setItems(newItems);
+    setLocalStorage(newItems);
   }
 
   const removeItem = (itemId) => {
@@ -53,4 +54,5 @@ export default App;
 // S7-237: Add localStorage.setItem with list & JSON.stringify(items)
 // S7-237: Add setLocalStorage & pass in newItems @removeItem function
 // S7-237: Add newItems equal to spread operator of items & newItem @addItem function
-// S7-237: pass in newItems to setItems @addItem function 
+// S7-237: pass in newItems to setItems @addItem function
+// S7-237: Add setLocalStorage & pass in newItems @addItem function 
