@@ -17,7 +17,7 @@ const setLocalStorage = (items) => {
  localStorage.setItem('list', JSON.stringify(items));
 };
 const App = () => {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(getLocalStorage());
 
   const addItem = (itemName) => {
     const newItem = {
@@ -71,4 +71,5 @@ export default App;
 // S7-238: Add if statement to check if list is true
 // S7-238: Add list to retrieve item from localStorage with key 'list'
 // S7-238: Add else statement to set list to empty array
-// S7-238: Add return list @getLocalStorage function
+// S7-238: Add return list @getLocalStorage function 
+// S7-238: Add getLocalStorage to default value @App component> items state
