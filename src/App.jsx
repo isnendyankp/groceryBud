@@ -18,7 +18,7 @@ const setLocalStorage = (items) => {
 };
 const defaultList = JSON.parse(localStorage.getItem('list') || '[]');
 const App = () => {
-  const [items, setItems] = useState(getLocalStorage());
+  const [items, setItems] = useState(defaultList);
 
   const addItem = (itemName) => {
     const newItem = {
@@ -75,3 +75,4 @@ export default App;
 // S7-238: Add return list @getLocalStorage function 
 // S7-238: Add getLocalStorage to default value @App component> items state
 // S7-238: create defaultList variable equal to JSON.parse(localStorage.getItem('list') || '[]')
+// s7-238: pass in defaultList value to items state
