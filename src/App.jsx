@@ -16,6 +16,7 @@ const getLocalStorage = () => {
 const setLocalStorage = (items) => {
  localStorage.setItem('list', JSON.stringify(items));
 };
+const defaultList = JSON.parse(localStorage.getItem('list') || '[]');
 const App = () => {
   const [items, setItems] = useState(getLocalStorage());
 
@@ -73,3 +74,4 @@ export default App;
 // S7-238: Add else statement to set list to empty array
 // S7-238: Add return list @getLocalStorage function 
 // S7-238: Add getLocalStorage to default value @App component> items state
+// S7-238: create defaultList variable equal to JSON.parse(localStorage.getItem('list') || '[]')
