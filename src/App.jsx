@@ -10,6 +10,7 @@ const getLocalStorage = () => {
   } else {
     list = [];
   }
+  return list;
 };
 
 const setLocalStorage = (items) => {
@@ -70,3 +71,4 @@ export default App;
 // S7-238: Add if statement to check if list is true
 // S7-238: Add list to retrieve item from localStorage with key 'list'
 // S7-238: Add else statement to set list to empty array
+// S7-238: Add return list @getLocalStorage function
