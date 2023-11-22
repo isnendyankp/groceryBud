@@ -7,8 +7,10 @@ const getLocalStorage = () => {
   let list = localStorage.getItem('list');
   if (list) {
     list = JSON.parse(localStorage.getItem('list'));
+  } else {
+    list = [];
   }
-}
+};
 
 const setLocalStorage = (items) => {
  localStorage.setItem('list', JSON.stringify(items));
@@ -67,3 +69,4 @@ export default App;
 // S7-238: create list variable equal to localStorage.getItem('list') @getLocalStorage function
 // S7-238: Add if statement to check if list is true
 // S7-238: Add list to retrieve item from localStorage with key 'list'
+// S7-238: Add else statement to set list to empty array
