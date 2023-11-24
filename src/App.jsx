@@ -38,7 +38,7 @@ const App = () => {
   };
 
   const editItem = (itemId) => {
-    const newItems = items.map(() => {
+    const newItems = items.map((item) => {
 
     });
   };
@@ -85,3 +85,4 @@ export default App;
 // S7-239: create editItem function base
 // S7-239: pass itemId to editItem function
 // S7-239: create newItems with map over items
+// S7-239: pass in item to map over method @editItem function
