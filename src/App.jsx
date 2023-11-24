@@ -37,6 +37,10 @@ const App = () => {
       setLocalStorage(newItems);
   };
 
+  const editItem = () => {
+
+  };
+
   return <section className="section-center">
     <Form addItem={addItem}/>
     <Items items={items} removeItem={removeItem} />
@@ -76,3 +80,4 @@ export default App;
 // S7-238: Add getLocalStorage to default value @App component> items state
 // S7-238: create defaultList variable equal to JSON.parse(localStorage.getItem('list') || '[]')
 // s7-238: pass in defaultList value to items state
+// S7-239: create editItem function base
