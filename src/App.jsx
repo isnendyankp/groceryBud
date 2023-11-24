@@ -42,6 +42,7 @@ const App = () => {
       if (item.id === itemId) {
         
       }
+      return item;
     });
   };
 
@@ -89,3 +90,4 @@ export default App;
 // S7-239: create newItems with map over items
 // S7-239: pass in item to map over method @editItem function
 // S7-239: Add if statement to check if item.id is equal to itemId
+// S7-239: Add return item @editItem function
