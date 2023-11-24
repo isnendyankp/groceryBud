@@ -37,7 +37,7 @@ const App = () => {
       setLocalStorage(newItems);
   };
 
-  const editItem = () => {
+  const editItem = (itemId) => {
 
   };
 
@@ -81,3 +81,4 @@ export default App;
 // S7-238: create defaultList variable equal to JSON.parse(localStorage.getItem('list') || '[]')
 // s7-238: pass in defaultList value to items state
 // S7-239: create editItem function base
+// S7-239: pass itemId to editItem function
