@@ -39,7 +39,9 @@ const App = () => {
 
   const editItem = (itemId) => {
     const newItems = items.map((item) => {
-
+      if (item.id === itemId) {
+        
+      }
     });
   };
 
@@ -86,3 +88,4 @@ export default App;
 // S7-239: pass itemId to editItem function
 // S7-239: create newItems with map over items
 // S7-239: pass in item to map over method @editItem function
+// S7-239: Add if statement to check if item.id is equal to itemId
