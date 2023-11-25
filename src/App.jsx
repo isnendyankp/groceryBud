@@ -40,7 +40,7 @@ const App = () => {
   const editItem = (itemId) => {
     const newItems = items.map((item) => {
       if (item.id === itemId) {
-        
+        const newItem = {...item, completed: !item.completed};
       }
       return item;
     });
@@ -91,3 +91,4 @@ export default App;
 // S7-239: pass in item to map over method @editItem function
 // S7-239: Add if statement to check if item.id is equal to itemId
 // S7-239: Add return item @editItem function
+// S7-239: Add new variable newItem equal to spread operator of item & completed property
