@@ -51,7 +51,7 @@ const App = () => {
 
   return <section className="section-center">
     <Form addItem={addItem}/>
-    <Items items={items} removeItem={removeItem} />
+    <Items items={items} removeItem={removeItem} editItem={editItem}/>
     </section>;
 };
 
@@ -98,3 +98,4 @@ export default App;
 // S7-239: Add return newItem @editItem function
 // S7-239: pass in newItems to setItems @editItem function
 // S7-239: Add setLocalStorage & pass in newItems @editItem function
+// S7-239: pass in editItem function to Items component
