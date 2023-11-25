@@ -41,6 +41,7 @@ const App = () => {
     const newItems = items.map((item) => {
       if (item.id === itemId) {
         const newItem = {...item, completed: !item.completed};
+        return newItem;
       }
       return item;
     });
@@ -92,3 +93,4 @@ export default App;
 // S7-239: Add if statement to check if item.id is equal to itemId
 // S7-239: Add return item @editItem function
 // S7-239: Add new variable newItem equal to spread operator of item & completed property
+// S7-239: Add return newItem @editItem function
