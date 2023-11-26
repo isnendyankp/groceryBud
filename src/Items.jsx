@@ -1,4 +1,3 @@
-import React from 'react'
 import SingleItem from './SingleItem';
 
 const Items = ({ items, removeItem, editItem }) => {
@@ -18,7 +17,6 @@ const Items = ({ items, removeItem, editItem }) => {
   );
 };
 export default Items;
-
 
 // Progress:
 // S7-235: create Items component
