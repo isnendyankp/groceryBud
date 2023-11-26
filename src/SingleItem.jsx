@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 const SingleItem = ({item, removeItem, editItem}) => {
-  const [isChecked, setIsChecked] = useState(item.completed)
   return (
     <div className="single-item">
       <input
