@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const SingleItem = ({item, removeItem}) => {
+const SingleItem = ({item, removeItem, editItem}) => {
   const [isChecked, setIsChecked] = useState(item.completed)
   return (
     <div className="single-item">
@@ -42,3 +42,4 @@ export default SingleItem
 // S7-236: Add onChange with pass setIsChecked @input
 // S7-236: Add style to p with textTransform: 'capitalize' & textDecoration: item.completed && 'line-through'
 // S7-237: Add onClick with pass removeItem @button
+// S7-239: pass in editItem function to singleItem component
