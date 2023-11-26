@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-
-const SingleItem = ({item, removeItem, editItem}) => {
+const SingleItem = ({ item, removeItem, editItem }) => {
   return (
     <div className="single-item">
       <input
@@ -25,9 +23,8 @@ const SingleItem = ({item, removeItem, editItem}) => {
       </button>
     </div>
   );
-}
-
-export default SingleItem
+};
+export default SingleItem;
 
 // Progress:
 // S7-236: create SingleItem component
