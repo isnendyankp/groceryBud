@@ -2,7 +2,7 @@ import { useState } from "react";
 import Form from "./Form";
 import { nanoid } from "nanoid";
 import Items from "./Items";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 const getLocalStorage = () => {
   let list = localStorage.getItem('list');
@@ -104,3 +104,4 @@ export default App;
 // S7-239: Add setLocalStorage & pass in newItems @editItem function
 // S7-239: pass in editItem function to Items component
 // S7-239: pass in  ToasterContainer with position prop top-center @App component
+// S7-239: import toast & ToastContainer from react-toastify
