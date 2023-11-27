@@ -30,6 +30,7 @@ const App = () => {
     const newItems = [...items, newItem];
     setItems(newItems);
     setLocalStorage(newItems);
+    toast.success('item added to the list');
   }
 
   const removeItem = (itemId) => {
@@ -105,3 +106,4 @@ export default App;
 // S7-239: pass in editItem function to Items component
 // S7-239: pass in  ToasterContainer with position prop top-center @App component
 // S7-239: import toast & ToastContainer from react-toastify
+// S7-239: Add toast.success with message 'item added to the list' @addItem function
