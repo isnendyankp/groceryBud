@@ -2,6 +2,7 @@ import { useState } from "react";
 import Form from "./Form";
 import { nanoid } from "nanoid";
 import Items from "./Items";
+import { ToastContainer } from "react-toastify";
 
 const getLocalStorage = () => {
   let list = localStorage.getItem('list');
@@ -49,10 +50,13 @@ const App = () => {
     setLocalStorage(newItems);
   };
 
-  return <section className="section-center">
-    <Form addItem={addItem}/>
-    <Items items={items} removeItem={removeItem} editItem={editItem}/>
-    </section>;
+  return (
+    <section className="section-center">
+      <ToastContainer position="top-center" />
+      <Form addItem={addItem} />
+      <Items items={items} removeItem={removeItem} editItem={editItem} />
+    </section>
+  );
 };
 
 export default App;
@@ -99,3 +103,4 @@ export default App;
 // S7-239: pass in newItems to setItems @editItem function
 // S7-239: Add setLocalStorage & pass in newItems @editItem function
 // S7-239: pass in editItem function to Items component
+// S7-239: pass in  ToasterContainer with position prop top-center @App component
