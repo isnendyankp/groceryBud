@@ -1,8 +1,8 @@
-import { useState } from "react"; 
-import Form from "./Form";
-import { nanoid } from "nanoid";
-import Items from "./Items";
-import { ToastContainer, toast } from "react-toastify";
+import { useEffect, useState } from 'react';
+import Form from './Form';
+import { nanoid } from 'nanoid';
+import Items from './Items';
+import { ToastContainer, toast } from 'react-toastify';
 
 const getLocalStorage = () => {
   let list = localStorage.getItem('list');
@@ -15,7 +15,7 @@ const getLocalStorage = () => {
 };
 
 const setLocalStorage = (items) => {
- localStorage.setItem('list', JSON.stringify(items));
+  localStorage.setItem('list', JSON.stringify(items));
 };
 const defaultList = JSON.parse(localStorage.getItem('list') || '[]');
 const App = () => {
@@ -31,18 +31,19 @@ const App = () => {
     setItems(newItems);
     setLocalStorage(newItems);
     toast.success('item added to the list');
-  }
+  };
 
   const removeItem = (itemId) => {
-     const newItems = items.filter((item) => item.id !== itemId);
-      setItems(newItems);
-      setLocalStorage(newItems);
-      toast.success('item deleted');
+    const newItems = items.filter((item) => item.id !== itemId);
+    setItems(newItems);
+    setLocalStorage(newItems);
+    toast.success('item deleted');
+  };
 
   const editItem = (itemId) => {
     const newItems = items.map((item) => {
       if (item.id === itemId) {
-        const newItem = {...item, completed: !item.completed};
+        const newItem = { ...item, completed: !item.completed };
         return newItem;
       }
       return item;
@@ -50,7 +51,6 @@ const App = () => {
     setItems(newItems);
     setLocalStorage(newItems);
   };
-
   return (
     <section className="section-center">
       <ToastContainer position="top-center" />
@@ -59,7 +59,6 @@ const App = () => {
     </section>
   );
 };
-
 export default App;
 
 // Progress
@@ -89,7 +88,7 @@ export default App;
 // S7-238: Add if statement to check if list is true
 // S7-238: Add list to retrieve item from localStorage with key 'list'
 // S7-238: Add else statement to set list to empty array
-// S7-238: Add return list @getLocalStorage function 
+// S7-238: Add return list @getLocalStorage function
 // S7-238: Add getLocalStorage to default value @App component> items state
 // S7-238: create defaultList variable equal to JSON.parse(localStorage.getItem('list') || '[]')
 // s7-238: pass in defaultList value to items state
