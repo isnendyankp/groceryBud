@@ -12,6 +12,7 @@ const Form = ({addItem}) => {
       return;
     }
     addItem(newItemName);
+    setNewItemName('');
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -51,3 +52,4 @@ export default Form
 // S7-233: add newItemName to addItem @handleSubmit
 // S7-240: Import toast from react-toastify
 // s7-240: pass in toast error for if statement @handleSubmit
+// s7-240: add setNewItemName @handleSubmit
