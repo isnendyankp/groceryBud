@@ -9,7 +9,8 @@ const Form = ({addItem}) => {
     event.preventDefault();
     if (!newItemName) {
       toast.error('please provide value');
-      return};
+      return;
+    }
     addItem(newItemName);
   };
   return (
