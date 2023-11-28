@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const Form = ({ addItem }) => {
@@ -14,12 +13,13 @@ const Form = ({ addItem }) => {
     addItem(newItemName);
     setNewItemName('');
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <h4>grocery bud</h4>
       <div className="form-control">
         <input
-          type="text"
+          type="text "
           className="form-input"
           value={newItemName}
           onChange={(event) => setNewItemName(event.target.value)}
@@ -31,9 +31,7 @@ const Form = ({ addItem }) => {
     </form>
   );
 };
-
-export default Form
-
+export default Form;
 
 // Progress:
 // S7-233: import { useState } from "react";
