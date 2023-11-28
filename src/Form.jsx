@@ -2,11 +2,11 @@ import React from 'react'
 import { useState } from 'react'
 import { toast } from 'react-toastify';
 
-const Form = ({addItem}) => {
+const Form = ({ addItem }) => {
   const [newItemName, setNewItemName] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (!newItemName) {
       toast.error('please provide value');
       return;
@@ -30,7 +30,7 @@ const Form = ({addItem}) => {
       </div>
     </form>
   );
-}
+};
 
 export default Form
 
@@ -53,3 +53,4 @@ export default Form
 // S7-240: Import toast from react-toastify
 // s7-240: pass in toast error for if statement @handleSubmit
 // s7-240: add setNewItemName @handleSubmit
+// s7-240: change parameter event to e @handleSubmit
