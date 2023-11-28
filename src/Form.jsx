@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { toast } from 'react-toastify';
 
 const Form = ({addItem}) => {
   const [newItemName, setNewItemName] = useState('');
@@ -45,3 +46,4 @@ export default Form
 // S7-233: add addItem prop to Form component
 // S7-233: add if statement to handleSubmit
 // S7-233: add newItemName to addItem @handleSubmit
+// S7-240: Import toast from react-toastify
