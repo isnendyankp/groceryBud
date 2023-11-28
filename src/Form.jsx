@@ -7,7 +7,9 @@ const Form = ({addItem}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!newItemName) return;
+    if (!newItemName) {
+      toast.error('please provide value');
+      return};
     addItem(newItemName);
   };
   return (
@@ -47,3 +49,4 @@ export default Form
 // S7-233: add if statement to handleSubmit
 // S7-233: add newItemName to addItem @handleSubmit
 // S7-240: Import toast from react-toastify
+// s7-240: pass in toast error for if statement @handleSubmit
